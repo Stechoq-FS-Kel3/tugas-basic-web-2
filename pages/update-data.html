@@ -1,0 +1,145 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.p0" />
+    <link rel="stylesheet" href="/styles/tambah-data.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Update Data</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="mb-4 fw-bolder text-primary text-center">Update Data</h1>
+      <form id="myForm" class="container-fluid px-5">
+        <div class="mb-3">
+          <label class="form-label">Nama kengkap</label>
+          <input
+            required
+            type="text"
+            class="form-control"
+            placeholder="Masukan nama lengkap"
+            value="dhenmas adhi"
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Jenis Kelamin</label><br />
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="exampleRadios"
+              id="exampleRadios1"
+              checked
+            />
+            <label class="form-check-label" for="exampleRadios1">
+              Laki-laki
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="exampleRadios"
+              id="exampleRadios2"
+            />
+            <label class="form-check-label" for="exampleRadios2">
+              Perempuan
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Agama</label>
+          <select required class="form-select" aria-label="Pilih agama">
+            <option selected disabled>Pilih agama</option>
+            <option value="Islam" selected>Islam</option>
+            <option value="Kristen Protestan">Kristen Protestan</option>
+            <option value="Kristen Katolik">Kristen Katolik</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Buddha">Buddha</option>
+            <option value="Konghucu">Konghucu</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label class="form-label">Tempat Kelahiran</label>
+            <input
+              required
+              type="text"
+              class="form-control"
+              placeholder="Masukan tempat kelahiran"
+              value="Surabaya"
+            />
+          </div>
+          <div class="col-md-6 mb-3">
+            <label class="form-label">Tanggal Lahir</label>
+            <input
+              required
+              type="date"
+              class="form-control"
+              placeholder="Masukan Tanggal Lahir"
+              value="2024-03-12"
+            />
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">NIM</label>
+          <input
+            min="1"
+            required
+            type="number"
+            class="form-control"
+            placeholder="Masukan NIM"
+            value="012345"
+          />
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label class="form-label">Perguruan Tinggi</label>
+            <input
+              required
+              type="text"
+              class="form-control"
+              placeholder="Masukan perguruan tinggi"
+              value="Universitas Negeri Surabaya"
+            />
+          </div>
+          <div class="col-md-6 mb-3">
+            <label class="form-label">Program Studi</label>
+            <input
+              required
+              type="text"
+              class="form-control"
+              placeholder="Masukan program studi"
+              value="S1 Sistem Informasi"
+            />
+          </div>
+        </div>
+        <div class="d-flex flex-row my-3 gap-2">
+            <button type="button" class="btn btn-primary" id="update-data"">Simpan</button>
+            <button type="button" class="btn btn-danger px-4">Batal</button>
+          </div>
+      </form>
+    </main>
+  <script>
+    $('#update-data').on('click',function(){
+      Swal.fire({
+    title: "Successfully!",
+    text: "Data has been updated",
+    icon: "success"
+    }).then((result) => {
+            if (result.isConfirmed) {
+              window.location.href = "./../index.html";;}});
+    })
+  </script>
+  </body>
+</html>
