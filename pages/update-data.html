@@ -17,9 +17,9 @@
   <body>
     <main>
       <h1 class="mb-4 fw-bolder text-primary text-center">Update Data</h1>
-      <form id="myForm" class="container-fluid px-5">
+      <form id="myForm" class="container">
         <div class="mb-3">
-          <label class="form-label">Nama kengkap</label>
+          <label class="form-label fw-bolder">Nama kengkap</label>
           <input
             required
             type="text"
@@ -29,7 +29,7 @@
           />
         </div>
         <div class="mb-3">
-          <label class="form-label">Jenis Kelamin</label><br />
+          <label class="form-label fw-bolder">Jenis Kelamin</label><br />
           <div class="form-check">
             <input
               class="form-check-input"
@@ -56,7 +56,7 @@
         </div>
 
         <div class="mb-3">
-          <label class="form-label">Agama</label>
+          <label class="form-label fw-bolder">Agama</label>
           <select required class="form-select" aria-label="Pilih agama">
             <option selected disabled>Pilih agama</option>
             <option value="Islam" selected>Islam</option>
@@ -70,7 +70,7 @@
 
         <div class="row">
           <div class="col-md-6 mb-3">
-            <label class="form-label">Tempat Kelahiran</label>
+            <label class="form-label fw-bolder">Tempat Kelahiran</label>
             <input
               required
               type="text"
@@ -80,7 +80,7 @@
             />
           </div>
           <div class="col-md-6 mb-3">
-            <label class="form-label">Tanggal Lahir</label>
+            <label class="form-label fw-bolder">Tanggal Lahir</label>
             <input
               required
               type="date"
@@ -92,7 +92,7 @@
         </div>
 
         <div class="mb-3">
-          <label class="form-label">NIM</label>
+          <label class="form-label fw-bolder">NIM</label>
           <input
             min="1"
             required
@@ -104,7 +104,7 @@
         </div>
         <div class="row">
           <div class="col-md-6 mb-3">
-            <label class="form-label">Perguruan Tinggi</label>
+            <label class="form-label fw-bolder">Perguruan Tinggi</label>
             <input
               required
               type="text"
@@ -114,7 +114,7 @@
             />
           </div>
           <div class="col-md-6 mb-3">
-            <label class="form-label">Program Studi</label>
+            <label class="form-label fw-bolder">Program Studi</label>
             <input
               required
               type="text"
@@ -126,7 +126,7 @@
         </div>
         <div class="d-flex flex-row my-3 gap-2">
             <button type="button" class="btn btn-primary" id="update-data"">Simpan</button>
-            <button type="button" class="btn btn-danger px-4">Batal</button>
+            <a href="/index.html"><button type="button" class="btn btn-danger px-4">Batal</button></a>
           </div>
       </form>
     </main>
@@ -138,7 +138,7 @@
     icon: "success"
     }).then((result) => {
             if (result.isConfirmed) {
-              window.location.href = "./../index.html";;}});
+              window.location.href = "/index.html";;}});
     })
   </script>
   </body>
