@@ -1,0 +1,57 @@
+body {
+    background: #f5f5f5;
+    margin-top: 20px;
+}
+
+.ui-w-80 {
+    width : 80px !important;
+    height: auto;
+}
+
+.btn-default {
+    border-color: rgba(0, 115, 255, 0.1);
+    background  : rgba(255, 0, 0, 0);
+    color       : #4E5155;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+/* ... Bagian lainnya ... */
+.text-center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text-center .btn-primary,
+.text-center .btn-default {
+    margin-top: -10px;
+    margin-bottom: 100px;
+}
+/* ... Bagian lainnya ... */
+
+.account-settings-fileinput {
+    position  : absolute;
+    visibility: hidden;
+    width     : 1px;
+    height    : 1px;
+    opacity   : 0;
+}
+
+.account-settings-links .list-group-item.active {
+    font-weight: bold !important;
+}
+
+html:not(.dark-style) .account-settings-links .list-group-item.active {
+    background: transparent !important;
+}
+
+.light-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(34, 168, 0, 0.03) !important;
+}
+
+.light-style .account-settings-links .list-group-item.active {
+    color: #0065e9 !important;
+}
