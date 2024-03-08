@@ -1,14 +1,14 @@
 body {
-  background-color: #e9f0f6; /* Warna biru muda untuk latar belakang */
+  background-color: #fff;
 }
 
 .card {
   background-color: transparent; /* Transparan */
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   color: black;
   backdrop-filter: blur(20px); /* Efek blur */
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
 }
 
 .container {
@@ -28,4 +28,14 @@ body {
 .btn-primary a {
   color: #fff;
   text-decoration: none;
+}
+
+.input-box {
+  border-bottom: 2px solid;
+}
+
+.form-control {
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
